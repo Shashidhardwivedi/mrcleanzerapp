@@ -1,8 +1,8 @@
 import React from "react";
-import HeroSlider from "./HeroSlider";
-import TestimonialSlider from "./TestimonialSlider";
-import AboutUs from "./AboutUs";
-import Footer from "./footer";
+import HeroSlider from "../src/HeroSlider";
+import TestimonialSlider from "../src/TestimonialSlider";
+import AboutUs from "../src/AboutUs";
+import Footer from "../src/Footer";
 
 function HomePage() {
   return (
