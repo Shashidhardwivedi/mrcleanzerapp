@@ -3,6 +3,11 @@ import './HeroSlider.css';
 
 // ✅ Local image import
 import cleaningImage from '../src/assets/cleaning.jpg';
+import cleaningImage2 from '../src/assets/cleaning2.jpeg';
+import cleaningImage3 from '../src/assets/cleaning3.jpeg';
+import cleaningImage4 from '../src/assets/cleaning4.jpeg';
+import cleaningImage5 from '../src/assets/cleaning5.jpeg';
+import cleaningImage6 from '../src/assets/cleaning6.jpeg';
 
 const slides = [
   {
@@ -11,12 +16,27 @@ const slides = [
     description: 'Experience top-quality cleaning services.',
   },
   {
-    image: cleaningImage,
+    image: cleaningImage2,
     title: 'Custom Packages',
     description: 'We tailor services to your needs.',
   },
   {
-    image: cleaningImage,
+    image: cleaningImage3,
+    title: 'Trusted Professionals',
+    description: 'Our team is trained, insured, and reliable.',
+  },
+  {
+    image: cleaningImage4,
+    title: 'Trusted Professionals',
+    description: 'Our team is trained, insured, and reliable.',
+  },
+  {
+    image: cleaningImage5,
+    title: 'Trusted Professionals',
+    description: 'Our team is trained, insured, and reliable.',
+  },
+  {
+    image: cleaningImage6,
     title: 'Trusted Professionals',
     description: 'Our team is trained, insured, and reliable.',
   },
