@@ -4,6 +4,7 @@ import './App.css';
 import HomePage from './HomePage';
 import ProductPage from './ProductPage';
 import ScrollToHashElement from './ScrollToHashElement';
+import AboutUsDetail from './AboutUsDetail';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ function App() {
           <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
             <li><a href="/" onClick={closeMenu}>Home</a></li>
             <li><a href="/#testimonials" onClick={closeMenu}>Testimonials</a></li>
-            <li><a href="/#about" onClick={closeMenu}>About</a></li>
+            <li><a href="/about" onClick={closeMenu}>About</a></li>
             <li><Link to="/product" onClick={closeMenu}>Our Product</Link></li>
             <li><a href="/#footer" onClick={closeMenu}>Contact us</a></li>
           </ul>
@@ -31,6 +32,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUsDetail />} />
         <Route path="/product" element={<ProductPage />} />
       </Routes>
     </Router>

@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import "./ProductPage.css";
+import Footer from "../src/Footer";
 
 const products = [
   {
@@ -64,6 +65,7 @@ const products = [
 
 function ProductPage() {
   return (
+    <>
     <div className="product-page">
       <h1>Our Products</h1>
       <div className="product-grid">
@@ -77,6 +79,8 @@ function ProductPage() {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
