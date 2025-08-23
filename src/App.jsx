@@ -23,7 +23,7 @@ function App() {
           <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
             <li><a href="/" onClick={closeMenu}>Home</a></li>
             <li><a href="/#testimonials" onClick={closeMenu}>Testimonials</a></li>
-            <li><a href="/about" onClick={closeMenu}>About</a></li>
+            <li><Link to="/about" onClick={closeMenu}>About</Link></li>
             <li><Link to="/product" onClick={closeMenu}>Our Product</Link></li>
             <li><a href="/#footer" onClick={closeMenu}>Contact us</a></li>
           </ul>
