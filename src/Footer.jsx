@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import { Link } from "react-router-dom";  // Import Link for navigation
 import "./Footer.css";
 
 const Footer = () => {
@@ -65,7 +66,12 @@ const Footer = () => {
             <a href="#" aria-label="Facebook">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
               <i className="fa-brands fa-instagram"></i>
             </a>
             <a href="#" aria-label="YouTube">
@@ -77,26 +83,36 @@ const Footer = () => {
         <div className="footer-column contact-info">
           <h2 className="heading">Contact Address</h2>
           <address>
-            MR.CLEANZER<br />
-            Veena Nagar, Datta Wadi<br />
+            MR.CLEANZER
+            <br />
+            Veena Nagar, Datta Wadi
+            <br />
             Nagpur, MH
           </address>
         </div>
 
         <div className="footer-column contact-details">
           <h2 className="heading">Contact Details</h2>
-          <p><i className="fa-solid fa-mobile"></i> +91 9834939788</p>
-          <p><i className="fa-brands fa-whatsapp"></i> +91 9834939788</p>
-          <p><i className="fa-solid fa-envelope"></i> mrcleanzers@gmail.com</p>
+          <p>
+            <i className="fa-solid fa-mobile"></i> +91 9834939788
+          </p>
+          <p>
+            <i className="fa-brands fa-whatsapp"></i> +91 9834939788
+          </p>
+          <p>
+            <i className="fa-solid fa-envelope"></i> mrcleanzers@gmail.com
+          </p>
         </div>
 
         <div className="footer-column links">
           <h2 className="heading">Useful Links</h2>
           <ul>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Our Mission</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li>
+              <Link to="/about#ourstory">Our Story</Link>
+            </li>
+            <li>
+              <Link to="/about#our-team">Our Team</Link>
+            </li>
           </ul>
         </div>
       </div>

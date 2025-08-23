@@ -12,7 +12,7 @@ const AboutUsDetail = () => {
     return (
         <>
 
-            <div className="about-us">
+            <div className="about-us" id='ourstory'>
 
                 {/* Hero Section */}
                 <div
@@ -28,7 +28,7 @@ const AboutUsDetail = () => {
                 </div>
 
                 {/* 🔼 Our Team Section moved above leaders */}
-                <section className="our-team">
+                <section className="our-team" id='our-team'>
                     <h2>Our Team</h2>
                     <p>
                         Behind every success story is a team of passionate, creative, and driven individuals.
