@@ -4,14 +4,14 @@ import App from './App.jsx'
 import HeroSlider from './HeroSlider.jsx'
 import TestimonialSlider from './TestimonialSlider.jsx'
 import AboutUs from './AboutUs.jsx'
-import ContactUs from './ContactUs.jsx'
+import Footer from './footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <HeroSlider/>
+    {/* <HeroSlider/>
     <TestimonialSlider/>
     <AboutUs/>
-    <ContactUs/>
+    <Footer/> */}
   </StrictMode>,
 )

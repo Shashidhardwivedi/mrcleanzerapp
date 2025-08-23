@@ -11,12 +11,12 @@ const slides = [
     description: 'Experience top-quality cleaning services.',
   },
   {
-    image: 'https://via.placeholder.com/1200x400?text=Slide+2',
+    image: cleaningImage,
     title: 'Custom Packages',
     description: 'We tailor services to your needs.',
   },
   {
-    image: 'https://via.placeholder.com/1200x400?text=Slide+3',
+    image: cleaningImage,
     title: 'Trusted Professionals',
     description: 'Our team is trained, insured, and reliable.',
   },
@@ -45,7 +45,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="hero-slider">
+    <div className="hero-slider" id='home'>
       {slides.map((slide, index) => (
         <div
           key={index}

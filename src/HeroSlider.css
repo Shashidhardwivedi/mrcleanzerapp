@@ -30,17 +30,19 @@
   color: #fff;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
+  max-width: 90%;
 }
 
 .slide-content h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .slide-content p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
+/* Keyframes */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -72,4 +74,48 @@
 
 .nav-button.next {
   right: 1rem;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 60vh;
+  }
+
+  .slide-content {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  .slide-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .slide-content p {
+    font-size: 0.9rem;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 50vh;
+  }
+
+  .slide-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .slide-content p {
+    font-size: 0.8rem;
+  }
+
+  .nav-button {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
 }

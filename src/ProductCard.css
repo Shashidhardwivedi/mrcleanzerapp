@@ -1,0 +1,39 @@
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.image-carousel img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}

@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Layout */
+.footer {
+  background-color: #140358;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+/* Top CTA */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #140358;
+  padding: 1rem 0;
+}
+
+.order-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #bc410d;
+  border: none;
+  color: wheat;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #e06853;
+}
+
+/* Main Footer Content */
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Columns */
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.submit-btn i {
+  color: dodgerblue;
+}
+
+.status-message {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.status-message.success {
+  color: lightgreen;
+}
+
+.status-message.error {
+  color: lightcoral;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+/* Contact & Links */
+.contact-info address,
+.contact-details p {
+  line-height: 1.6;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  margin-bottom: 0.5rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #f4f471;
+  text-decoration: underline;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  background-color: #37457e;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    border-radius: 25px;
+    margin-bottom: 0.5rem;
+  }
+
+  .submit-btn {
+    border-radius: 25px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

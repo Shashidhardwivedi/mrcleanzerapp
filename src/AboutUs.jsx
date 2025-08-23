@@ -3,7 +3,7 @@ import "../src/AboutUs.css"; // Import the CSS file
 
 const AboutUs = () => {
   return (
-    <section className="about-us-section">
+    <section className="about-us-section" id="about">
       <div className="about-us-overlay">
         <h2 className="about-us-heading">About Us</h2>
         <p className="about-us-text">

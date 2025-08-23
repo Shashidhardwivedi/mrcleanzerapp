@@ -1,7 +1,6 @@
 .slider-container {
-  height: 50vh;
+  height: auto;
   width: 100%;
-  /* max-width: 900px; wider to fit 3 cards nicely */
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -10,7 +9,21 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.testimonial-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 .slider-button {
   position: absolute;
@@ -37,10 +50,11 @@
   gap: 20px;
   width: 100%;
   transition: transform 0.5s ease;
+  justify-content: center;
 }
 
 .testimonial-card {
-  flex: 1 0 30%; /* 3 cards per row */
+  flex: 1 0 30%;
   background: white;
   border-radius: 10px;
   padding: 15px;
@@ -64,9 +78,8 @@
 .testimonial-text {
   font-size: 1rem;
   font-style: italic;
-  margin-bottom: 10px;
   color: #333;
-  flex-grow: 1;
+  margin-bottom: 0.5rem;
 }
 
 .testimonial-name {
@@ -74,3 +87,52 @@
   color: #555;
   font-weight: 600;
 }
+
+/* 🔁 RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .slider-button {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    flex: 1 0 45%;
+    padding: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-name {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-button {
+    position: static; /* remove absolute */
+    margin: 0 10px;
+    font-size: 1.8rem;
+  }
+
+  .slider-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;  /* space between cards and buttons */
+  }
+}
+
+
+

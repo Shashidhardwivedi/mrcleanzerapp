@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./TestimonialSlider.css";
 
 const testimonials = [
@@ -42,7 +42,23 @@ const testimonials = [
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerView = 3;
+  const [cardsPerView, setCardsPerView] = useState(getCardsPerView());
+
+  function getCardsPerView() {
+    const width = window.innerWidth;
+    if (width <= 480) return 1;
+    if (width <= 768) return 2;
+    return 3;
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCardsPerView(getCardsPerView());
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const totalTestimonials = testimonials.length;
 
   const next = () => {
@@ -57,21 +73,15 @@ const TestimonialSlider = () => {
     );
   };
 
-  // Calculate which 3 testimonials to show
   const visibleTestimonials = [];
   for (let i = 0; i < cardsPerView; i++) {
     visibleTestimonials.push(testimonials[(currentIndex + i) % totalTestimonials]);
   }
 
   return (
-    <div className="slider-container">
-      <button
-        onClick={prev}
-        className="slider-button left"
-        aria-label="Previous testimonials"
-      >
-        ‹
-      </button>
+    <div className="slider-container" id="testimonials">
+      <div id="testimonias-content">
+        <h2 className="testimonial-heading">Testimonials</h2>
 
       <div className="testimonial-wrapper">
         {visibleTestimonials.map(({ id, image, name, text }) => (
@@ -82,14 +92,26 @@ const TestimonialSlider = () => {
           </div>
         ))}
       </div>
+      </div>
 
-      <button
-        onClick={next}
-        className="slider-button right"
-        aria-label="Next testimonials"
-      >
-        ›
-      </button>
+
+      <div className="button-wrapper">
+        <button
+          onClick={prev}
+          className="slider-button left"
+          aria-label="Previous testimonials"
+        >
+          ‹
+        </button>
+
+        <button
+          onClick={next}
+          className="slider-button right"
+          aria-label="Next testimonials"
+        >
+          ›
+        </button>
+      </div>
     </div>
   );
 };
