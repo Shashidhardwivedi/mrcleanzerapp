@@ -1,12 +1,12 @@
 import React from 'react';
-import '../src/css/AboutUsDetail.css';
-import Footer from "../src/Footer";
+import '../css/AboutUsDetail.css';
+import Footer from "./Footer";
 
 // Importing images (replace with your actual images)
 // import heroImage from '../assets/hero.jpg';
 // import ceoImage from '../assets/ceo.jpg';
 // import founderImage from '../assets/founder.jpg';
-import cleaningImage from '../src/assets/cleaning.jpg';
+import cleaningImage from '../assets/cleaning.jpg';
 
 const AboutUsDetail = () => {
     return (

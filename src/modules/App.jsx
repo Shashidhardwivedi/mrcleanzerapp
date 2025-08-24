@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './css/App.css';
+import '../css/App.css';
 import HomePage from './HomePage';
 import ProductPage from './ProductPage';
 import ScrollToHashElement from './ScrollToHashElement';

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import './css/HeroSlider.css';
+import '../css/HeroSlider.css';
 
 // ✅ Local image import
-import cleaningImage from '../src/assets/cleaning.jpg';
-import cleaningImage2 from '../src/assets/cleaning2.jpeg';
-import cleaningImage3 from '../src/assets/cleaning3.jpeg';
-import cleaningImage4 from '../src/assets/cleaning4.jpeg';
-import cleaningImage5 from '../src/assets/cleaning5.jpeg';
-import cleaningImage6 from '../src/assets/cleaning6.jpeg';
+import cleaningImage from '../assets/cleaning.jpg';
+import cleaningImage2 from '../assets/cleaning2.jpeg';
+import cleaningImage3 from '../assets/cleaning3.jpeg';
+import cleaningImage4 from '../assets/cleaning4.jpeg';
+import cleaningImage5 from '../assets/cleaning5.jpeg';
+import cleaningImage6 from '../assets/cleaning6.jpeg';
 
 const slides = [
   {
