@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import "./ProductPage.css";
+import "./css/ProductPage.css";
 import Footer from "../src/Footer";
 
 const products = [

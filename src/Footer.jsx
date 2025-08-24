@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";  // Import Link for navigation
-import "./Footer.css";
+import "./css/Footer.css";
 
 const Footer = () => {
   const form = useRef();

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './HeroSlider.css';
+import './css/HeroSlider.css';
 
 // ✅ Local image import
 import cleaningImage from '../src/assets/cleaning.jpg';

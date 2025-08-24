@@ -1,5 +1,5 @@
 import React from 'react';
-import '../src/AboutUsDetail.css';
+import '../src/css/AboutUsDetail.css';
 import Footer from "../src/Footer";
 
 // Importing images (replace with your actual images)
